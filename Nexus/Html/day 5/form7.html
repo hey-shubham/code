@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Details Form</title>
+</head>
+<body>
+    <h1>Health Details Form</h1>
+    <form>
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            <br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" min="2001-01-01" max="2025-12-31" required><br><br>
+         
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="contact" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend><b>Medical History</b></legend>
+
+            <label for="blood">Blood Group:</label>
+            <select name="blood" id="blood" required>
+                <option value="" disabled selected>Select your group</option>
+                <option value="A+">A+</option>
+                <option value="AB+">AB+</option>
+                <option value="O">O</option>
+                <option value="B-">B-</option>
+            </select>
+            <br><br>
+            
+            <label for="glasses">Do you wear glasses or contact lenses?</label><br>
+            <input id="glasses_yes" type="radio" name="glasses" value="Yes">
+            <label for="glasses_yes">Yes</label><br>
+            <input id="glasses_no" type="radio" name="glasses" value="No">
+            <label for="glasses_no">No</label>
+            <br><br>
+
+            <label for="conditions">Pre-Existing Conditions:</label><br>
+            <textarea name="conditions" id="conditions" placeholder="List any Pre-Existing Conditions" rows="3" cols="30"></textarea><br><br>
+
+            <label>Allergies (check all that apply):</label>
+            <br>
+            <input type="checkbox" id="pollen" name="allergies" value="pollen">
+            <label for="pollen">Pollen</label>
+            <br>
+            <input type="checkbox" id="peanuts" name="allergies" value="peanuts">
+            <label for="peanuts">Peanuts</label>
+            <br>
+            <input type="checkbox" id="latex" name="allergies" value="latex">
+            <label for="latex">Latex</label>
+            <br>
+            <input type="checkbox" id="no_allergies" name="allergies" value="none">
+            <label for="no_allergies">None</label>
+            <br><br>
+
+            <label for="medications">Current Medications:</label><br>
+            <textarea name="medications" id="medications" placeholder="List any current Medications" rows="3" cols="30"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend><b>Emergency Contacts</b></legend>
+
+            <label for="contact_name">Emergency contact Name:</label>
+            <input type="text" id="contact_name" name="emergency_contact_name" required><br><br>
+            <label for="contact_phone">Emergency contact Phone:</label>
+            <input type="tel" id="contact_phone" name="emergency_contact_phone" required><br><br>
+            <label for="relation">Relationship to Emergency Contact:</label>
+            <input type="text" id="relation" name="emergency_contact_relation" required>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
