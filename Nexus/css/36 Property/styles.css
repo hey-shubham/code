@@ -1,0 +1,286 @@
+/* ========================================
+   CSS FONT PROPERTY - Complete Examples
+   Based on font.html notes
+   ======================================== */
+
+/* ========================================
+   1. FONT PROPERTY (SHORTHAND)
+   ======================================== */
+/* Syntax: font: [font-style] [font-variant] [font-weight] [font-size/line-height] [font-family]; */
+
+/* Complete shorthand example */
+body {
+    font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
+}
+
+h1 {
+    font: normal normal 700 32px/1.2 "Times New Roman", serif;
+}
+
+
+/* ========================================
+   2. FONT-STYLE
+   ======================================== */
+/* Specifies the style of the font */
+
+.font-style-normal {
+    font-style: normal;
+}
+
+.font-style-italic {
+    font-style: italic;
+}
+
+.font-style-oblique {
+    font-style: oblique;
+}
+
+
+/* ========================================
+   3. FONT-VARIANT
+   ======================================== */
+/* Specifies whether text is displayed in small-caps */
+
+.font-variant-normal {
+    font-variant: normal;
+}
+
+.font-variant-small-caps {
+    font-variant: small-caps;
+}
+
+
+/* ========================================
+   4. FONT-WEIGHT
+   ======================================== */
+/* Specifies the weight (thickness) of the font */
+
+.font-weight-normal {
+    font-weight: normal; /* Same as 400 */
+}
+
+.font-weight-bold {
+    font-weight: bold; /* Same as 700 */
+}
+
+.font-weight-bolder {
+    font-weight: bolder; /* Relative to parent */
+}
+
+.font-weight-lighter {
+    font-weight: lighter; /* Relative to parent */
+}
+
+/* Numeric values */
+.font-weight-100 {
+    font-weight: 100; /* Thin */
+}
+
+.font-weight-200 {
+    font-weight: 200; /* Extra Light */
+}
+
+.font-weight-300 {
+    font-weight: 300; /* Light */
+}
+
+.font-weight-400 {
+    font-weight: 400; /* Normal */
+}
+
+.font-weight-500 {
+    font-weight: 500; /* Medium */
+}
+
+.font-weight-600 {
+    font-weight: 600; /* Semi Bold */
+}
+
+.font-weight-700 {
+    font-weight: 700; /* Bold */
+}
+
+.font-weight-800 {
+    font-weight: 800; /* Extra Bold */
+}
+
+.font-weight-900 {
+    font-weight: 900; /* Black */
+}
+
+
+/* ========================================
+   5. FONT-SIZE
+   ======================================== */
+/* Specifies the size of the font - absolute or relative units */
+
+/* Pixels (absolute) */
+.font-size-12px {
+    font-size: 12px;
+}
+
+.font-size-16px {
+    font-size: 16px;
+}
+
+.font-size-24px {
+    font-size: 24px;
+}
+
+/* Em (relative to parent) */
+.font-size-1em {
+    font-size: 1em;
+}
+
+.font-size-1-5em {
+    font-size: 1.5em;
+}
+
+.font-size-2em {
+    font-size: 2em;
+}
+
+/* Rem (relative to root) */
+.font-size-1rem {
+    font-size: 1rem;
+}
+
+.font-size-1-5rem {
+    font-size: 1.5rem;
+}
+
+.font-size-2rem {
+    font-size: 2rem;
+}
+
+/* Percentage (relative to parent) */
+.font-size-100-percent {
+    font-size: 100%;
+}
+
+.font-size-150-percent {
+    font-size: 150%;
+}
+
+.font-size-200-percent {
+    font-size: 200%;
+}
+
+
+/* ========================================
+   6. LINE-HEIGHT
+   ======================================== */
+/* Specifies the height of a line of text */
+
+.line-height-normal {
+    line-height: normal;
+}
+
+/* Number (multiplier of font-size) */
+.line-height-1-5 {
+    line-height: 1.5;
+}
+
+.line-height-2 {
+    line-height: 2;
+}
+
+/* Pixels (absolute) */
+.line-height-20px {
+    line-height: 20px;
+}
+
+.line-height-30px {
+    line-height: 30px;
+}
+
+/* Percentage */
+.line-height-150-percent {
+    line-height: 150%;
+}
+
+.line-height-200-percent {
+    line-height: 200%;
+}
+
+
+/* ========================================
+   7. FONT-FAMILY
+   ======================================== */
+/* Specifies the typeface - multiple families as fallback */
+
+.font-family-arial {
+    font-family: Arial, sans-serif;
+}
+
+.font-family-times {
+    font-family: "Times New Roman", serif;
+}
+
+.font-family-courier {
+    font-family: "Courier New", monospace;
+}
+
+.font-family-georgia {
+    font-family: Georgia, serif;
+}
+
+.font-family-verdana {
+    font-family: Verdana, sans-serif;
+}
+
+/* Generic font families */
+.font-family-serif {
+    font-family: serif;
+}
+
+.font-family-sans-serif {
+    font-family: sans-serif;
+}
+
+.font-family-monospace {
+    font-family: monospace;
+}
+
+.font-family-cursive {
+    font-family: cursive;
+}
+
+.font-family-fantasy {
+    font-family: fantasy;
+}
+
+
+/* ========================================
+   8. PRACTICAL EXAMPLES
+   ======================================== */
+
+/* Example 1: Complete shorthand */
+.example-1 {
+    font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
+}
+
+/* Example 2: Header style */
+.example-2 {
+    font: normal normal 700 32px/1.2 "Times New Roman", serif;
+}
+
+/* Example 3: Paragraph style */
+.example-3 {
+    font: normal normal 400 18px/1.6 "Georgia", serif;
+}
+
+/* Example 4: Code style */
+.example-4 {
+    font: normal normal 500 14px/1.4 "Courier New", monospace;
+}
+
+/* Example 5: Individual properties */
+.example-5 {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.8;
+    font-family: "Verdana", sans-serif;
+}

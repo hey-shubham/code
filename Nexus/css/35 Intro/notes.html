@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOtes</title>
+</head>
+<body>
+  
+  <!-- notes on css -->
+
+<h1>Introduction to CSS</h1>
+
+<p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML.</p>
+
+<p>CSS allows you to control the layout, colors, fonts, and overall visual appearance of web pages. It separates content from design, making it easier to maintain and update the look of a website.</p>
+
+<h2>Types of CSS</h2>
+<ul>
+  <li>Inline CSS</li>
+  <li>Internal CSS</li>
+  <li>External CSS</li>
+</ul>
+
+<h3>Inline CSS</h3>
+<p>Inline CSS is applied directly to an HTML element using the "style" attribute.</p>
+<pre>
+<p style="color: red;">This is a red paragraph.</p>
+</pre>
+
+<h3>Internal CSS</h3>
+<p>Internal CSS is defined within a style tag in the head section of an HTML document.</p>
+<pre>
+<style>
+  p {
+      color: green;
+  }
+</style>
+</pre>
+
+<h3>External CSS</h3>
+<p>External CSS is written in a separate .css file and linked to the HTML document using a link tag.</p>
+<pre>
+<link rel="stylesheet" href="styles.css">
+</pre>
+
+<h2>CSS Syntax</h2>
+<p>CSS rules consist of a selector and a declaration block. The selector specifies which HTML elements the rule applies to, and the declaration block contains one or more declarations separated by semicolons.</p>    
+
+<pre>
+selector{  
+    property: value;  
+}
+</pre>
+
+<h2>Example</h2>
+<pre>
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+p{
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+</pre>  
+
+<h2>CSS Selectors</h2>
+<p>CSS selectors are used to select the HTML elements you want to style. Some common types of selectors include:</p>
+<ul>
+  <li>Element Selector</li>
+  <li>Class Selector</li>
+  <li>ID Selector</li>
+  <li>Attribute Selector</li>
+  <li>Pseudo-class Selector</li>
+</ul>
+
+<h3>Element selector</h3>
+<p>Selects all elements of a specific type.</p>
+<pre> 
+p {
+    color: red;
+}
+</pre>
+
+<h3>Class selector</h3>
+<p>Selects all elements with a specific class attribute.</p>
+<pre>
+.my-class {
+    background-color: yellow;
+}
+</pre>
+
+<h3>ID selector</h3>
+<p>Selects a single element with a specific ID attribute.</p>
+<pre>
+#my-id {
+    font-weight: bold;
+}
+</pre>
+
+<h3>Attribute selector</h3>
+<p>Selects elements based on the presence or value of an attribute.</p>
+<pre>
+[attribute] {
+    /* styles */
+}
+
+[attribute="value"] {
+    /* styles */
+}
+</pre>
+
+<h3>Pseudo-class selector</h3>
+<p>Selects elements based on their state or position.</p>
+<pre>
+a:hover {
+    text-decoration: underline;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+</pre>
+
+<h2>CSS Box Model</h2>
+<p>The CSS box model describes the rectangular boxes generated for elements in the document tree. It consists of four areas:</p>
+<ul>
+  <li>Content</li>
+  <li>Padding</li>
+  <li>Border</li>
+  <li>Margin</li>
+</ul>
+<p>Understanding the box model is essential for controlling layout and spacing in web design.</p>
+
+</body>
+</html>

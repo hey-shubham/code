@@ -1,0 +1,233 @@
+/* ========================================
+   3. BASIC CSS SYNTAX
+   ======================================== */
+
+        
+/* Example 1: Styling h1 */
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+/* Example 2: Styling paragraphs */
+p {
+    color: red;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+
+/* ========================================
+   4. CSS SELECTORS
+   ======================================== */
+
+/* --- Element Selector --- */
+/* Selects all elements of a specific type */
+/* Example: All <p> tags will be red (already defined above) */
+
+h2 {
+    color: darkblue;
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* --- Class Selector --- */
+/* Selects elements with specific class attribute */
+/* Usage: <div class="my-class">Content</div> */
+.my-class {
+    background-color: yellow;
+    padding: 10px;
+}
+
+/* --- ID Selector --- */
+/* Selects single element with specific ID attribute */
+/* Usage: <div id="my-id">Content</div> */
+#my-id {
+    font-weight: bold;
+    color: navy;
+}
+
+/* --- Attribute Selector --- */
+/* Selects elements based on attribute presence or value */
+
+/* Select all elements with any 'title' attribute */
+[title] {
+    cursor: help;
+    border-bottom: 1px dotted gray;
+}
+
+/* Select elements where attribute equals specific value */
+[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Specific examples */
+input[type="text"] {
+    border: 2px solid #3498db;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+a[target="_blank"] {
+    color: purple;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+/* --- Pseudo-class Selector --- */
+/* Selects elements based on state or position */
+
+/* Hover state for links */
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* First child in list */
+li:first-child {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Additional pseudo-class examples */
+li:last-child {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+li:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+li:nth-child(even) {
+    background-color: #ffffff;
+}
+
+button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+input:focus {
+    outline: 2px solid #3498db;
+    background-color: #f0f8ff;
+}
+
+
+/* ========================================
+   5. CSS BOX MODEL
+   ======================================== */
+/* Box Model components: Content, Padding, Border, Margin */
+
+/* Complete box model example */
+.box-model-demo {
+    /* Content dimensions */
+    width: 200px;
+    height: 100px;
+    
+    /* Padding - Space inside border, around content */
+    padding: 20px;
+    
+    /* Border - Surrounds the padding */
+    border: 5px solid black;
+    
+    /* Margin - Space outside border */
+    margin: 30px;
+    
+    /* Visual styling */
+    background-color: lightblue;
+}
+
+/* Understanding box-sizing property */
+.box-sizing-border-box {
+    box-sizing: border-box; /* Width includes padding and border */
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+.box-sizing-content-box {
+    box-sizing: content-box; /* Default: Width is content only */
+    width: 100%;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* Individual box model properties */
+.spacing-demo {
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+/* Shorthand versions */
+.spacing-shorthand {
+    margin: 10px 15px; /* top-bottom left-right */
+    padding: 5px 10px 15px 20px; /* top right bottom left (clockwise) */
+}
+
+
+/* ========================================
+   6. PRACTICAL STYLING FOR NOTES PAGE
+   ======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: red;
+    border-bottom: 3px dotted #3498db;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #34495e;
+    margin-top: 30px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+h3 {
+    color: #555;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #3498db;
+    padding: 10px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+}
+
+ul {
+    background-color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li {
+    margin: 8px 0;
+}

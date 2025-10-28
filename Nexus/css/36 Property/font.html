@@ -1,0 +1,59 @@
+<!-- Font property -->
+
+<h1>CSS Font Property</h1>
+<p>The <code>font</code> property in CSS is a shorthand property used to set multiple font-related properties in a single declaration. It can include font-style, font-variant, font-weight, font-size, line-height, and font-family.</p>
+
+<h2>Font Property Syntax</h2>
+<pre>
+font: [font-style] [font-variant] [font-weight] [font-size] [line-height] [font-family];
+</pre>
+
+<h3>Font Style</h3>
+<p>Specifies the style of the font. Common values include:</p>
+<pre>
+normal | italic | oblique
+</pre>
+
+<h3>Font Variant</h3>
+<p>Specifies whether the text is displayed in small-caps. Common values include:</p>
+<pre>
+normal | small-caps
+</pre>
+
+<h3>Font Weight</h3>
+<p>Specifies the weight (thickness) of the font. Common values include:</p>
+<pre>   
+normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+</pre>
+
+<h3>Font Size</h3>
+<p>Specifies the size of the font. You can use absolute or relative units. Examples
+include:</p>
+<pre>
+12px | 1em | 100% | 2rem
+</pre>
+
+<h3>Line Height</h3>
+<p>Specifies the height of a line of text. It can be a number, length
+, or percentage. Examples include:</p>
+<pre>
+normal | 1.5 | 20px | 150%
+</pre>
+
+<h3>Font Family</h3>
+<p>Specifies the typeface for the text. You can list multiple font families as a
+fallback mechanism. Examples include:</p>
+<pre>
+Arial, sans-serif | "Times New Roman", serif | "Courier New", monospace
+</pre>
+
+<h2>Examples</h2>
+<p>Here are some examples of how to use the <code>font</code> property in CSS:</p>
+<pre>   
+body {
+    font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
+}   
+h1 {
+    font: normal normal 700 32px/1.2 "Times New Roman", serif;
+}
+</pre>
