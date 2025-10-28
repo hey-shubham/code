@@ -1,0 +1,75 @@
+<!-- Order of CSS Properties -->
+
+<h2 style="background-color:  darkblue; color: red; text-align: center;">CSS Priorities Properties</h2>
+<p>When multiple CSS rules apply to the same element, the order of the properties can affect which styles are applied. The following rules determine the priority of CSS properties:</p>
+<div style="background-color: lightcyan; border-left: 3px solid red;">
+<ol>
+  <li><strong>Inline styles</strong> (styles applied directly to an element using the <code>style</code> attribute) have the highest priority.</li>
+  <li><strong>ID selectors</strong> have higher priority than class selectors, attribute selectors, and pseudo-classes.</li>
+  <li><strong>Class selectors</strong>, attribute selectors, and pseudo-classes have higher priority than element selectors and pseudo-elements.</li>
+  <li><strong>Element selectors</strong> and pseudo-elements have the lowest priority.</li>
+  <li>If two rules have the same specificity, the one that appears last in the CSS file will take precedence.</li>
+</ol>
+</div>
+<hr style="border: 1px solid red">
+
+
+<h2>!important</h2>
+<p class="first"><code>!important</code> can be added to a CSS property to give it the highest priority, overriding any other conflicting rules, regardless of specificity or order.</p>
+<p class="first" style="color: chartreuse;">it is higher priority than other rules, that's why even inline styling can be overridden here.</p>
+
+<style>
+.first {
+    color: blue !important;
+}
+</style>
+<hr style="border: 1px solid red">
+
+<h2>Type</h2>
+<ul>
+    <li>internal css(highest priority)</li>
+    <li>external css</li>
+</ul>
+
+<p>Example</p>
+<p id="demo" style="color: aqua;">Inline styles have the highest priority.</p>
+<style>
+#demo {
+    color: green; /* This will be overridden */
+}
+</style>
+<hr style="border: 1px solid red">
+
+
+<h2>Specificity</h2>
+<p>Here are the different levels of specificity with highest to lowest priority in CSS:</p>
+<ol>
+    <li>id</li>
+    <li>attribute</li>
+    <li>class</li>
+    <li>child and descendant</li>
+    <li>element</li>
+</ol>
+<hr style="border: 1px solid red">
+
+
+<h2>Order</h2>
+<p>The order of CSS properties can affect the final appearance of an element. Here are some key points to consider:</p>
+<ul>
+  <li>When multiple properties are applied to the same element, the last property defined will take precedence if they have the same specificity.</li>
+</ul>
+
+<p>Example</p>
+<p id="a">jo baad me color define kiya gaya hai uska priority zyada hoga</p>
+<style>
+#a{
+    color: blue; /* This will be overridden */
+}
+
+#a{
+    color: red;  /* This will take precedence */
+}   
+</style>
+<hr style="border: 1px solid red">
+
+
