@@ -1,0 +1,27 @@
+<!-- Notes on Box Model -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Box Model</h1>
+    <p>The CSS Box Model is a fundamental concept in web design and layout. It describes the rectangular boxes generated for elements in the document tree and consists of the following areas:</p>
+
+    <ol>
+        <li><strong>Content</strong>: This is the innermost area where text and images appear. The size of this area can be controlled using properties like <code>width</code> and <code>height</code>.</li><br>
+        <li><strong>Padding</strong>: This area surrounds the content and provides space between the content and the border. Padding can be set using properties like <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, and <code>padding-left</code>, or the shorthand <code>padding</code>.</li><br>
+        <li><strong>Border</strong>: The border wraps around the padding (if any) and content. You can customize the border's width, style, and color using properties like <code>border-width</code>, <code>border-style</code>, and <code>border-color</code>, or the shorthand <code>border</code>.</li><br>
+        <li><strong>Margin</strong>: This is the outermost area that creates space between the element and its neighboring elements. Margins can be set using properties like <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, and <code>margin-left</code>, or the shorthand <code>margin</code>.</li>
+    </ol>
+
+    <p style="background-color: red;">Understanding the Box Model is crucial for creating layouts that look good and function well across different devices and screen sizes.</p>
+
+    <p style="border-width: 10px 15px; border-style: solid ;">When we have 2 options for border, it will be allocated to the top and bottom. Border-left and border-right will take 50% each.</p>
+
+</body>
+</html>

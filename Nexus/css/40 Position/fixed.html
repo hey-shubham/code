@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Fixed</title>
+    <link rel="stylesheet" href="./fixed.css">
+</head>
+<body>
+<h1>Notes on Fixed Positioning in CSS:</h1>
+<p>1. The 'position: fixed;' property is used to position an element relative to the viewport, meaning it will stay in the same place even when the page is scrolled.</p>
+<p>2. When an element is positioned fixed, it is removed from the normal document flow, and other elements behave as if it does not exist.</p>
+<p>3. You can use the 'top', 'right', 'bottom', and 'left' properties to specify the exact position of the fixed element.</p>
+<p>4. Fixed elements are not affected by the scrolling of their parent elements.</p>
+<p>5. Fixed elements can overlap other elements, and their stacking order is determined by the 'z-index' property.</p>
+<p>6. To create a stacking context, you can set the 'position' property of an element to 'relative', 'absolute', or 'fixed', and assign a 'z-index' value.</p>
+
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Absolute</title>
+    <link rel="stylesheet" href="./absolute.css">
+</head>
+<body>
+<h1>Notes on Absolute Positioning in CSS:</h1>
+<p>1. The 'position: absolute;' property is used to position an element relative to its nearest positioned ancestor (i.e., the nearest ancestor that is not 'static').</p>
+<p>2. When an element is positioned absolutely, it is removed from the normal document flow, and other elements behave as if it does not exist.</p>
+<p>3. You can use the 'top', 'right', 'bottom', and 'left' properties to specify the exact position of the absolutely positioned element.</p>
+<p>4. If there is no positioned ancestor, the element will be positioned relative to the initial containing block (usually the viewport).</p>
+<p>5. Absolutely positioned elements can overlap other elements, and their stacking order is determined by the 'z-index' property.</p>
+<p>6. To create a stacking context, you can set the 'position' property of an element to 'relative', 'absolute', or 'fixed', and assign a 'z-index' value.</p>
+
+    <div class="container">
+        <div class="box box1">Box1</div>
+        <div class="box box2">Box2</div>
+        <div class="box box3">Box3</div>
+        <div class="box box4">Box4</div>
+    </div>
+</body>
+</html>
+

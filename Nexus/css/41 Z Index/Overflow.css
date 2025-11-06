@@ -1,0 +1,46 @@
+h1,h2{
+    text-align: center;
+    background-color: yellow;
+}
+
+.container1{
+    height: 300px;
+    width: 250px;
+    background-color: aqua;
+    /*  default (overflow: visible;) */
+}
+
+.container2{
+    height: 300px;
+    width: 250px;
+    background-color: red;
+    overflow: hidden;
+}
+
+h3{
+    display: inline;
+    background-color: antiquewhite;
+}
+
+span{
+    background-color: chocolate;
+}
+
+.container3{
+    height: 300px;
+    width: 250px;
+    background-color: blue;
+    overflow: scroll;
+}
+
+.container4{
+    height: 300px;
+    width: 250px;
+    background-color: chartreuse;
+    overflow: auto;
+}
+
+h4{
+    background-color: brown;
+    height: 30px;
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+    margin-right: 0px;
+}
+
+#a{
+    background-color: navy;
+}
+
+.first, .third{
+    display: inline-block;
+    height: 40vh;
+    width: 25vw ;
+}
+
+.second, .fourth{
+    display: inline-block;
+    height: 40vh;
+    width: 62vw ;
+}
+
+.second, .fourth{
+    margin-left: 11vw;
+}
+
+.third, .fourth{
+    margin-top: 10vh;
+}
