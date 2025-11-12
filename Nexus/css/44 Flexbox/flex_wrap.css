@@ -1,0 +1,53 @@
+.container{
+    background-color: aquamarine;
+    height: 500px;
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 5px solid black;
+    margin: 5px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: yellow;
+}
+.box5{
+    background-color: red;
+}
+.box6{
+    background-color: blue;
+}
+.box7{
+    background-color: green;
+}
+.box8{
+    background-color: yellow;
+}
+.box9{
+    background-color: red;
+}
+.box10{
+    background-color: blue;
+}
+.box11{
+    background-color: green;
+}
+.box12{
+    background-color: yellow;
+}
