@@ -1,0 +1,39 @@
+.container{
+    background-color: aqua;
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+}
+h1{
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+}
+p{
+    background-color: aqua;
+    margin:0;
+}
+span{
+    background-color: yellow;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 1px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+    flex-grow: 1;
+}
+.box3{
+    background-color: green;
+    flex-grow: 2;
+}
+.box4{
+    background-color: yellow;
+    order: 1;
+}

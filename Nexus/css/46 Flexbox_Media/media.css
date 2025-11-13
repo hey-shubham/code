@@ -1,0 +1,22 @@
+.container{
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+}
+
+/* Media query for screens with a maximum width of 300px */
+@media (max-width:300px){
+    .container{
+        background-color: red;
+    }
+}
+
+h1{
+    text-align: center;
+    background-color: red;
+}
+
+h3,h4{
+    text-align: start;
+    background-color: yellow;
+}

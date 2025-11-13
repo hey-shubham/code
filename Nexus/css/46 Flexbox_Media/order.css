@@ -1,0 +1,35 @@
+.container{
+    background-color: aqua;
+    height: auto;
+    display: flex;
+}
+h1{
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    background-color: red;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 1px;
+}
+.box1{
+    background-color: red;
+    order: 1;
+}
+.box2{
+    background-color: blue;
+    order: 0;
+}
+.box3{
+    background-color: green;
+    order: -1;
+}
+.box4{
+    background-color: yellow;
+    order: 1;
+}
