@@ -1,0 +1,26 @@
+.container{
+    background-color: blue;
+    /* height: 200px;
+    width: 200px; */
+    display: flex;
+}
+/* Mobiles Phones */
+@media(max-width:400px){
+    .container{
+        flex-direction: column;
+    }
+}
+/* Tablet max width 900px */
+@media(max-width:401px) and (max-width:700px)
+    {
+        .container{
+            flex-direction: column;
+        }
+    }
+.box{
+     color: red;
+     height: 200px;
+     width: 200px;
+     background-color: aqua;
+     margin: 30px;
+}
