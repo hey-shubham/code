@@ -14,3 +14,6 @@ console.log(d.getMonth());
 
 // sun-0/mon-1/tue-2.....
 console.log(d.getDay());
+
+// My idea
+console.log(new Date().getHours(),":",new Date().getMinutes());
