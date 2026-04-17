@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM (Document Object Model)</title>
+</head>
+<style>
+    #first{
+        color: red;
+        background-color: yellowgreen;
+    }
+    #first.shubham{   /* higher specificity (ID + class), so it overrides #first */     
+        color: blue ;
+        background-color: yellowgreen;
+    }   
+    .shubh{
+       color: aqua; ;
+    }
+</style>
+<body>
+    <div id="root">
+        <h1 id="first" class="header1">Hello world..!!</h1>
+        <h2 id="second" class="header2">DOM(Document Object Model)</h2>
+        <ul id="third" class="header3" style="background-color: purple;"></ul>
+    </div>
+</body>
+<script src="./dom.js"></script>
+</html> 
