@@ -1,0 +1,49 @@
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+h1{
+    color: black;
+    font-size: 100px;
+    box-shadow: 0px 3px 4px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    margin: 6px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#red{ background-color: red; }
+#blue{ background-color: blue; }
+#orange{ background-color: orange; }
+#green{ background-color: green; }
+#purple{ background-color: purple; }
+#pink { background: pink; }
+#brown { background: brown; }
+#white { background: white; }
+#gray { background: gray; }
+#cyan { background: cyan; }
+#magenta { background: magenta; }
+#lime { background: lime; }
+#teal { background: teal; }
+#navy { background: navy; }
+#maroon { background: maroon; }
+#olive { background: olive; }
+#gold { background: gold; }
+#coral { background: coral; }
+#indigo { background: indigo; }
+#violet { background: violet; }
+#tan { background: tan; }
