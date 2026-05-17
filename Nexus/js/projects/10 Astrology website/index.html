@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Astro Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="stars"></div>
+
+<div class="container">
+  <h1>🔮 Astro Predictor</h1>
+
+  <form id="astroForm">
+    <input type="text" id="name" placeholder="First Name" required><br><br>
+    <input type="text" id="surname" placeholder="Surname" required><br><br>
+
+    <div class="dob">
+      <input type="number" id="day" placeholder="DD" required>
+      <input type="number" id="month" placeholder="MM" required>
+      <input type="number" id="year" placeholder="YYYY" required>
+    </div><br>
+
+    <div class="lang-switch">
+      <button type="button" class="lang-btn active" data-lang="en">English</button>
+      <button type="button" class="lang-btn" data-lang="hi">हिंदी</button>
+    </div>
+
+    <button type="submit">Reveal Destiny ✨</button>
+  </form>
+
+  <div id="result"></div>
+</div>
+
+<footer>
+   Shubham Kumar © 2026 | Built with ❤️
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

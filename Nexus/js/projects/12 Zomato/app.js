@@ -1,0 +1,1027 @@
+const restaurant = [
+  {
+    "image": "ninth",
+    "name": "Punjab Grill",
+    "rating": 3,
+    "food_type": "Momos",
+    "price_for_two": [
+      19316
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "2.6",
+    "offers": 13,
+    "alchohol": false,
+    "Restaurent_open_time": 0,
+    "Restaurent_close_time": 12
+  },
+  {
+    "image": "ninth",
+    "name": "McDonalds",
+    "rating": 2,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      100
+    ],
+    "location": "Rohini",
+    "Distace_from_Customer_house": "7.0",
+    "offers": 21,
+    "alchohol": true,
+    "Restaurent_open_time": 4,
+    "Restaurent_close_time": 16
+  },
+  {
+    "image": "eighth",
+    "name": "KFC",
+    "rating": 1,
+    "food_type": "Ice Cream",
+    "price_for_two": [
+      19316
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "5.3",
+    "offers": 11,
+    "alchohol": false,
+    "Restaurent_open_time": 18,
+    "Restaurent_close_time": 6
+  },
+  {
+    "image": "sixth",
+    "name": "Subway",
+    "rating": 3,
+    "food_type": "Sandwich",
+    "price_for_two": [
+      2502
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "6.0",
+    "offers": 29,
+    "alchohol": true,
+    "Restaurent_open_time": 22,
+    "Restaurent_close_time": 10
+  },
+  {
+    "image": "seventh",
+    "name": "Taco Bell",
+    "rating": 3,
+    "food_type": "Burger",
+    "price_for_two": [
+      21718
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "7.8",
+    "offers": 6,
+    "alchohol": true,
+    "Restaurent_open_time": 3,
+    "Restaurent_close_time": 15
+  },
+  {
+    "image": "fifth",
+    "name": "Burger King",
+    "rating": 1,
+    "food_type": "Noodles",
+    "price_for_two": [
+      16914
+    ],
+    "location": "Hauz Khas",
+    "Distace_from_Customer_house": "5.5",
+    "offers": 26,
+    "alchohol": false,
+    "Restaurent_open_time": 7,
+    "Restaurent_close_time": 19
+  },
+  {
+    "image": "tenth",
+    "name": "Haldirams",
+    "rating": 5,
+    "food_type": "Pizza",
+    "price_for_two": [
+      12110
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "9.4",
+    "offers": 24,
+    "alchohol": true,
+    "Restaurent_open_time": 16,
+    "Restaurent_close_time": 4
+  },
+  {
+    "image": "second",
+    "name": "Behrouz Biryani",
+    "rating": 5,
+    "food_type": "Pizza",
+    "price_for_two": [
+      16914
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "4.7",
+    "offers": 17,
+    "alchohol": false,
+    "Restaurent_open_time": 22,
+    "Restaurent_close_time": 10
+  },
+  {
+    "image": "third",
+    "name": "Dominos",
+    "rating": 2,
+    "food_type": "Dosa",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Saket",
+    "Distace_from_Customer_house": "5.1",
+    "offers": 29,
+    "alchohol": true,
+    "Restaurent_open_time": 6,
+    "Restaurent_close_time": 18
+  },
+  {
+    "image": "first",
+    "name": "Barbeque Nation",
+    "rating": 4,
+    "food_type": "Pasta",
+    "price_for_two": [
+      7306
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "10.0",
+    "offers": 26,
+    "alchohol": false,
+    "Restaurent_open_time": 9,
+    "Restaurent_close_time": 21
+  },
+  {
+    "image": "sixth",
+    "name": "Dominos",
+    "rating": 5,
+    "food_type": "Noodles",
+    "price_for_two": [
+      100
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "8.2",
+    "offers": 10,
+    "alchohol": true,
+    "Restaurent_open_time": 16,
+    "Restaurent_close_time": 4
+  },
+  {
+    "image": "sixth",
+    "name": "Dominos",
+    "rating": 1,
+    "food_type": "Noodles",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Saket",
+    "Distace_from_Customer_house": "5.8",
+    "offers": 26,
+    "alchohol": false,
+    "Restaurent_open_time": 11,
+    "Restaurent_close_time": 23
+  },
+  {
+    "image": "fifth",
+    "name": "Wow Momo",
+    "rating": 2,
+    "food_type": "Sandwich",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "1.0",
+    "offers": 25,
+    "alchohol": true,
+    "Restaurent_open_time": 23,
+    "Restaurent_close_time": 11
+  },
+  {
+    "image": "tenth",
+    "name": "Social",
+    "rating": 5,
+    "food_type": "Pasta",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "9.3",
+    "offers": 26,
+    "alchohol": true,
+    "Restaurent_open_time": 0,
+    "Restaurent_close_time": 12
+  },
+  {
+    "image": "sixth",
+    "name": "Pizza Hut",
+    "rating": 3,
+    "food_type": "Biryani",
+    "price_for_two": [
+      2502
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "1.6",
+    "offers": 9,
+    "alchohol": true,
+    "Restaurent_open_time": 1,
+    "Restaurent_close_time": 13
+  },
+  {
+    "image": "seventh",
+    "name": "Bikanervala",
+    "rating": 1,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      16914
+    ],
+    "location": "Chandni Chowk",
+    "Distace_from_Customer_house": "1.3",
+    "offers": 18,
+    "alchohol": false,
+    "Restaurent_open_time": 8,
+    "Restaurent_close_time": 20
+  },
+  {
+    "image": "seventh",
+    "name": "La Pinoz Pizza",
+    "rating": 2,
+    "food_type": "Noodles",
+    "price_for_two": [
+      100
+    ],
+    "location": "Karol Bagh",
+    "Distace_from_Customer_house": "5.2",
+    "offers": 5,
+    "alchohol": true,
+    "Restaurent_open_time": 9,
+    "Restaurent_close_time": 21
+  },
+  {
+    "image": "ninth",
+    "name": "Starbucks",
+    "rating": 4,
+    "food_type": "Burger",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "5.6",
+    "offers": 28,
+    "alchohol": false,
+    "Restaurent_open_time": 3,
+    "Restaurent_close_time": 15
+  },
+  {
+    "image": "second",
+    "name": "Starbucks",
+    "rating": 5,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Hauz Khas",
+    "Distace_from_Customer_house": "3.0",
+    "offers": 20,
+    "alchohol": true,
+    "Restaurent_open_time": 11,
+    "Restaurent_close_time": 23
+  },
+  {
+    "image": "fourth",
+    "name": "Subway",
+    "rating": 5,
+    "food_type": "Noodles",
+    "price_for_two": [
+      12110
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "1.0",
+    "offers": 2,
+    "alchohol": false,
+    "Restaurent_open_time": 15,
+    "Restaurent_close_time": 3
+  },
+  {
+    "image": "sixth",
+    "name": "Barbeque Nation",
+    "rating": 5,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      16914
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "5.7",
+    "offers": 6,
+    "alchohol": false,
+    "Restaurent_open_time": 13,
+    "Restaurent_close_time": 1
+  },
+  {
+    "image": "third",
+    "name": "Theobroma",
+    "rating": 3,
+    "food_type": "Pasta",
+    "price_for_two": [
+      100
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "1.2",
+    "offers": 18,
+    "alchohol": true,
+    "Restaurent_open_time": 11,
+    "Restaurent_close_time": 23
+  },
+  {
+    "image": "ninth",
+    "name": "Barbeque Nation",
+    "rating": 5,
+    "food_type": "Momos",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Rohini",
+    "Distace_from_Customer_house": "8.7",
+    "offers": 17,
+    "alchohol": false,
+    "Restaurent_open_time": 6,
+    "Restaurent_close_time": 18
+  },
+  {
+    "image": "ninth",
+    "name": "Taco Bell",
+    "rating": 3,
+    "food_type": "Noodles",
+    "price_for_two": [
+      12110
+    ],
+    "location": "Karol Bagh",
+    "Distace_from_Customer_house": "2.5",
+    "offers": 22,
+    "alchohol": false,
+    "Restaurent_open_time": 5,
+    "Restaurent_close_time": 17
+  },
+  {
+    "image": "sixth",
+    "name": "Subway",
+    "rating": 5,
+    "food_type": "Burger",
+    "price_for_two": [
+      100
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "7.0",
+    "offers": 5,
+    "alchohol": true,
+    "Restaurent_open_time": 14,
+    "Restaurent_close_time": 2
+  },
+  {
+    "image": "second",
+    "name": "Faasos",
+    "rating": 5,
+    "food_type": "Momos",
+    "price_for_two": [
+      16914
+    ],
+    "location": "Chandni Chowk",
+    "Distace_from_Customer_house": "10.6",
+    "offers": 21,
+    "alchohol": true,
+    "Restaurent_open_time": 6,
+    "Restaurent_close_time": 18
+  },
+  {
+    "image": "first",
+    "name": "Cafe Coffee Day",
+    "rating": 1,
+    "food_type": "Pasta",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Hauz Khas",
+    "Distace_from_Customer_house": "5.4",
+    "offers": 24,
+    "alchohol": true,
+    "Restaurent_open_time": 14,
+    "Restaurent_close_time": 2
+  },
+  {
+    "image": "second",
+    "name": "KFC",
+    "rating": 3,
+    "food_type": "Burger",
+    "price_for_two": [
+      14512
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "3.8",
+    "offers": 25,
+    "alchohol": false,
+    "Restaurent_open_time": 7,
+    "Restaurent_close_time": 19
+  },
+  {
+    "image": "seventh",
+    "name": "Haldirams",
+    "rating": 1,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "2.0",
+    "offers": 21,
+    "alchohol": false,
+    "Restaurent_open_time": 16,
+    "Restaurent_close_time": 4
+  },
+  {
+    "image": "first",
+    "name": "Cafe Coffee Day",
+    "rating": 2,
+    "food_type": "Burger",
+    "price_for_two": [
+      7306
+    ],
+    "location": "Hauz Khas",
+    "Distace_from_Customer_house": "1.5",
+    "offers": 25,
+    "alchohol": true,
+    "Restaurent_open_time": 23,
+    "Restaurent_close_time": 11
+  },
+  {
+    "image": "seventh",
+    "name": "Starbucks",
+    "rating": 5,
+    "food_type": "Momos",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Karol Bagh",
+    "Distace_from_Customer_house": "3.8",
+    "offers": 27,
+    "alchohol": false,
+    "Restaurent_open_time": 6,
+    "Restaurent_close_time": 18
+  },
+  {
+    "image": "fifth",
+    "name": "Bikanervala",
+    "rating": 4,
+    "food_type": "Noodles",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "3.7",
+    "offers": 10,
+    "alchohol": true,
+    "Restaurent_open_time": 23,
+    "Restaurent_close_time": 11
+  },
+  {
+    "image": "third",
+    "name": "Sagar Ratna",
+    "rating": 3,
+    "food_type": "Dosa",
+    "price_for_two": [
+      7306
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "8.1",
+    "offers": 18,
+    "alchohol": false,
+    "Restaurent_open_time": 23,
+    "Restaurent_close_time": 11
+  },
+  {
+    "image": "second",
+    "name": "Theobroma",
+    "rating": 5,
+    "food_type": "Ice Cream",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "1.6",
+    "offers": 7,
+    "alchohol": true,
+    "Restaurent_open_time": 20,
+    "Restaurent_close_time": 8
+  },
+  {
+    "image": "ninth",
+    "name": "Taco Bell",
+    "rating": 3,
+    "food_type": "Pasta",
+    "price_for_two": [
+      100
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "1.9",
+    "offers": 2,
+    "alchohol": false,
+    "Restaurent_open_time": 1,
+    "Restaurent_close_time": 13
+  },
+  {
+    "image": "ninth",
+    "name": "Theobroma",
+    "rating": 5,
+    "food_type": "Dosa",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "3.4",
+    "offers": 6,
+    "alchohol": false,
+    "Restaurent_open_time": 1,
+    "Restaurent_close_time": 13
+  },
+  {
+    "image": "tenth",
+    "name": "Burger King",
+    "rating": 3,
+    "food_type": "Burger",
+    "price_for_two": [
+      16914
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "1.0",
+    "offers": 12,
+    "alchohol": true,
+    "Restaurent_open_time": 5,
+    "Restaurent_close_time": 17
+  },
+  {
+    "image": "ninth",
+    "name": "Burger King",
+    "rating": 2,
+    "food_type": "Ice Cream",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Saket",
+    "Distace_from_Customer_house": "3.8",
+    "offers": 13,
+    "alchohol": true,
+    "Restaurent_open_time": 23,
+    "Restaurent_close_time": 11
+  },
+  {
+    "image": "second",
+    "name": "Barbeque Nation",
+    "rating": 2,
+    "food_type": "Biryani",
+    "price_for_two": [
+      2502
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "1.1",
+    "offers": 14,
+    "alchohol": true,
+    "Restaurent_open_time": 8,
+    "Restaurent_close_time": 20
+  },
+  {
+    "image": "tenth",
+    "name": "La Pinoz Pizza",
+    "rating": 5,
+    "food_type": "Biryani",
+    "price_for_two": [
+      14512
+    ],
+    "location": "Hauz Khas",
+    "Distace_from_Customer_house": "9.8",
+    "offers": 18,
+    "alchohol": false,
+    "Restaurent_open_time": 19,
+    "Restaurent_close_time": 7
+  },
+  {
+    "image": "sixth",
+    "name": "Pizza Hut",
+    "rating": 4,
+    "food_type": "Noodles",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "1.1",
+    "offers": 4,
+    "alchohol": false,
+    "Restaurent_open_time": 17,
+    "Restaurent_close_time": 5
+  },
+  {
+    "image": "tenth",
+    "name": "Wow Momo",
+    "rating": 2,
+    "food_type": "Noodles",
+    "price_for_two": [
+      2502
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "4.8",
+    "offers": 16,
+    "alchohol": true,
+    "Restaurent_open_time": 2,
+    "Restaurent_close_time": 14
+  },
+  {
+    "image": "third",
+    "name": "Barbeque Nation",
+    "rating": 4,
+    "food_type": "Biryani",
+    "price_for_two": [
+      14512
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "10.3",
+    "offers": 2,
+    "alchohol": false,
+    "Restaurent_open_time": 12,
+    "Restaurent_close_time": 0
+  },
+  {
+    "image": "second",
+    "name": "Dominos",
+    "rating": 2,
+    "food_type": "Momos",
+    "price_for_two": [
+      16914
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "5.1",
+    "offers": 16,
+    "alchohol": false,
+    "Restaurent_open_time": 5,
+    "Restaurent_close_time": 17
+  },
+  {
+    "image": "first",
+    "name": "Taco Bell",
+    "rating": 4,
+    "food_type": "Burger",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Hauz Khas",
+    "Distace_from_Customer_house": "2.3",
+    "offers": 18,
+    "alchohol": false,
+    "Restaurent_open_time": 0,
+    "Restaurent_close_time": 12
+  },
+  {
+    "image": "eighth",
+    "name": "Pizza Hut",
+    "rating": 5,
+    "food_type": "Dosa",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "10.4",
+    "offers": 11,
+    "alchohol": true,
+    "Restaurent_open_time": 9,
+    "Restaurent_close_time": 21
+  },
+  {
+    "image": "third",
+    "name": "Dominos",
+    "rating": 3,
+    "food_type": "Sandwich",
+    "price_for_two": [
+      4904
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "1.5",
+    "offers": 25,
+    "alchohol": true,
+    "Restaurent_open_time": 15,
+    "Restaurent_close_time": 3
+  },
+  {
+    "image": "fourth",
+    "name": "La Pinoz Pizza",
+    "rating": 2,
+    "food_type": "Sandwich",
+    "price_for_two": [
+      19316
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "3.1",
+    "offers": 24,
+    "alchohol": false,
+    "Restaurent_open_time": 21,
+    "Restaurent_close_time": 9
+  },
+  {
+    "image": "ninth",
+    "name": "Bikanervala",
+    "rating": 5,
+    "food_type": "Noodles",
+    "price_for_two": [
+      16914
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "8.5",
+    "offers": 11,
+    "alchohol": false,
+    "Restaurent_open_time": 14,
+    "Restaurent_close_time": 2
+  },
+  {
+    "image": "second",
+    "name": "La Pinoz Pizza",
+    "rating": 5,
+    "food_type": "Ice Cream",
+    "price_for_two": [
+      4904
+    ],
+    "location": "India Gate",
+    "Distace_from_Customer_house": "1.1",
+    "offers": 20,
+    "alchohol": true,
+    "Restaurent_open_time": 4,
+    "Restaurent_close_time": 16
+  },
+  {
+    "image": "seventh",
+    "name": "Barbeque Nation",
+    "rating": 2,
+    "food_type": "Noodles",
+    "price_for_two": [
+      7306
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "4.7",
+    "offers": 14,
+    "alchohol": true,
+    "Restaurent_open_time": 19,
+    "Restaurent_close_time": 7
+  },
+  {
+    "image": "ninth",
+    "name": "Pizza Hut",
+    "rating": 4,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "6.5",
+    "offers": 7,
+    "alchohol": false,
+    "Restaurent_open_time": 0,
+    "Restaurent_close_time": 12
+  },
+  {
+    "image": "eighth",
+    "name": "Wow Momo",
+    "rating": 4,
+    "food_type": "Pasta",
+    "price_for_two": [
+      14512
+    ],
+    "location": "Chandni Chowk",
+    "Distace_from_Customer_house": "2.6",
+    "offers": 22,
+    "alchohol": false,
+    "Restaurent_open_time": 23,
+    "Restaurent_close_time": 11
+  },
+  {
+    "image": "third",
+    "name": "Behrouz Biryani",
+    "rating": 1,
+    "food_type": "Noodles",
+    "price_for_two": [
+      12110
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "4.0",
+    "offers": 16,
+    "alchohol": false,
+    "Restaurent_open_time": 9,
+    "Restaurent_close_time": 21
+  },
+  {
+    "image": "tenth",
+    "name": "Starbucks",
+    "rating": 1,
+    "food_type": "Noodles",
+    "price_for_two": [
+      19316
+    ],
+    "location": "Red Fort",
+    "Distace_from_Customer_house": "3.7",
+    "offers": 3,
+    "alchohol": false,
+    "Restaurent_open_time": 22,
+    "Restaurent_close_time": 10
+  },
+  {
+    "image": "fifth",
+    "name": "Cafe Coffee Day",
+    "rating": 4,
+    "food_type": "Pasta",
+    "price_for_two": [
+      16914
+    ],
+    "location": "Saket",
+    "Distace_from_Customer_house": "7.4",
+    "offers": 7,
+    "alchohol": false,
+    "Restaurent_open_time": 10,
+    "Restaurent_close_time": 22
+  },
+  {
+    "image": "eighth",
+    "name": "Haldirams",
+    "rating": 3,
+    "food_type": "Burger",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "5.4",
+    "offers": 13,
+    "alchohol": false,
+    "Restaurent_open_time": 14,
+    "Restaurent_close_time": 2
+  },
+  {
+    "image": "eighth",
+    "name": "KFC",
+    "rating": 2,
+    "food_type": "Sandwich",
+    "price_for_two": [
+      21718
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "2.5",
+    "offers": 29,
+    "alchohol": false,
+    "Restaurent_open_time": 18,
+    "Restaurent_close_time": 6
+  },
+  {
+    "image": "sixth",
+    "name": "Starbucks",
+    "rating": 3,
+    "food_type": "Burger",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "7.3",
+    "offers": 25,
+    "alchohol": false,
+    "Restaurent_open_time": 22,
+    "Restaurent_close_time": 10
+  },
+  {
+    "image": "sixth",
+    "name": "McDonalds",
+    "rating": 1,
+    "food_type": "Burger",
+    "price_for_two": [
+      14512
+    ],
+    "location": "Saket",
+    "Distace_from_Customer_house": "10.8",
+    "offers": 29,
+    "alchohol": false,
+    "Restaurent_open_time": 15,
+    "Restaurent_close_time": 3
+  },
+  {
+    "image": "seventh",
+    "name": "Theobroma",
+    "rating": 2,
+    "food_type": "Biryani",
+    "price_for_two": [
+      16914
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "6.7",
+    "offers": 21,
+    "alchohol": false,
+    "Restaurent_open_time": 12,
+    "Restaurent_close_time": 0
+  },
+  {
+    "image": "fifth",
+    "name": "Burger King",
+    "rating": 4,
+    "food_type": "Pasta",
+    "price_for_two": [
+      100
+    ],
+    "location": "Saket",
+    "Distace_from_Customer_house": "2.8",
+    "offers": 20,
+    "alchohol": false,
+    "Restaurent_open_time": 16,
+    "Restaurent_close_time": 4
+  },
+  {
+    "image": "third",
+    "name": "Taco Bell",
+    "rating": 1,
+    "food_type": "Momos",
+    "price_for_two": [
+      100
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "10.0",
+    "offers": 23,
+    "alchohol": true,
+    "Restaurent_open_time": 14,
+    "Restaurent_close_time": 2
+  },
+  {
+    "image": "first",
+    "name": "Sagar Ratna",
+    "rating": 4,
+    "food_type": "Biryani",
+    "price_for_two": [
+      9708
+    ],
+    "location": "Dwarka",
+    "Distace_from_Customer_house": "1.4",
+    "offers": 8,
+    "alchohol": false,
+    "Restaurent_open_time": 15,
+    "Restaurent_close_time": 3
+  },
+  {
+    "image": "first",
+    "name": "Subway",
+    "rating": 5,
+    "food_type": "Paneer Tikka",
+    "price_for_two": [
+      12110
+    ],
+    "location": "Connaught Place",
+    "Distace_from_Customer_house": "1.1",
+    "offers": 21,
+    "alchohol": true,
+    "Restaurent_open_time": 11,
+    "Restaurent_close_time": 23
+  },
+  {
+    "image": "third",
+    "name": "Taco Bell",
+    "rating": 5,
+    "food_type": "Burger",
+    "price_for_two": [
+      19316
+    ],
+    "location": "Lajpat Nagar",
+    "Distace_from_Customer_house": "1.0",
+    "offers": 13,
+    "alchohol": false,
+    "Restaurent_open_time": 7,
+    "Restaurent_close_time": 19
+  },
+  {
+    "image": "ninth",
+    "name": "Behrouz Biryani",
+    "rating": 5,
+    "food_type": "Pizza",
+    "price_for_two": [
+      12110
+    ],
+    "location": "Chandni Chowk",
+    "Distace_from_Customer_house": "1.7",
+    "offers": 15,
+    "alchohol": false,
+    "Restaurent_open_time": 15,
+    "Restaurent_close_time": 3
+  }
+];
+
+function getrestaurant(restaurant){
+
+    restaurant.forEach(restaurant => {
+        
+        // create a card
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        // create a image
+        const image = document.createElement('img');
+        image.src = `Assets/${restaurant.image}.jpeg`
+
+        // card-content
+        const card_content = document.createElement("img");
+        card_content.classList.add('card-content');
+    });
+}
+
+getrestaurant(restaurant);
