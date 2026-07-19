@@ -1,7 +1,7 @@
-const element = React.createElement("h1",{},"hello world..!");
+const element1 = React.createElement("h1",{id:"first", className:"Shubham",style:{backgroundColor:"skyblue", color:"white"}},"React..");
+const element2 = React.createElement("h3",{id:"first", className:"Shubham",style:{backgroundColor:"green", color:"white"}},"Hello World..!!");
 
-// OldReact(17)
-// ReactDOM.render(element,document.getElementById('root'));
+const div1 = React.createElement('div',{},[element1,element2]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(element);
+const Reactroot = ReactDOM.createRoot(document.getElementById('root'));
+Reactroot.render(div1);
