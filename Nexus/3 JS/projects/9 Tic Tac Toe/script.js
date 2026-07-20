@@ -1,86 +1,124 @@
-let cells = document.querySelectorAll(".cell");
+const cells = document.querySelectorAll(".cell");
+
 let currentPlayer = "X";
 
 let xImg = document.getElementById("xImg");
 let oImg = document.getElementById("oImg");
+
 let winnerText = document.getElementById("winnerText");
 let restartBtn = document.getElementById("restartBtn");
 
-let board = ["", "", "", "", "", "", "", "", ""];
+let board = ["","","","","","","","",""];
 
-// Winning patterns
 const winPatterns = [
-  [0,1,2],
-  [3,4,5],
-  [6,7,8],
-  [0,3,6],
-  [1,4,7],
-  [2,5,8],
-  [0,4,8],
-  [2,4,6]
+
+[0,1,2],
+[3,4,5],
+[6,7,8],
+
+[0,3,6],
+[1,4,7],
+[2,5,8],
+
+[0,4,8],
+[2,4,6]
+
 ];
 
-// Initial active player
 xImg.classList.add("active");
 
-// Cell click
-cells.forEach((cell, index) => {
-  cell.addEventListener("click", () => {
+cells.forEach((cell,index)=>{
 
-    if (cell.innerText !== "" || checkWinner()) return;
+cell.addEventListener("click",()=>{
 
-    cell.innerText = currentPlayer;
-    board[index] = currentPlayer;
+if(cell.innerHTML!=="" || checkWinner()) return;
 
-    // Winner check
-    if (checkWinner()) {
-      winnerText.innerText = "Winner is " + currentPlayer + " 🏆";
-      return;
-    }
+cell.innerHTML=currentPlayer;
 
-    // 🔥 Draw check
-    if (!board.includes("")) {
-      winnerText.innerText = "Match Draw 🤝";
-      return;
-    }
+board[index]=currentPlayer;
 
-    // Switch turn
-    if (currentPlayer === "X") {
-      currentPlayer = "O";
-      xImg.classList.remove("active");
-      oImg.classList.add("active");
-    } else {
-      currentPlayer = "X";
-      oImg.classList.remove("active");
-      xImg.classList.add("active");
-    }
+if(checkWinner()){
 
-  });
-});
+winnerText.innerHTML="🏆 Winner is "+currentPlayer;
 
-// Winner function
-function checkWinner() {
-  for (let pattern of winPatterns) {
-    let [a, b, c] = pattern;
+return;
 
-    if (
-      board[a] &&
-      board[a] === board[b] &&
-      board[a] === board[c]
-    ) {
-      return true;
-    }
-  }
-  return false;
 }
 
-// Restart game
-restartBtn.addEventListener("click", () => {
-  cells.forEach(cell => cell.innerText = "");
-  board = ["", "", "", "", "", "", "", "", ""];
-  currentPlayer = "X";
-  winnerText.innerText = "";
+if(!board.includes("")){
 
-  oImg.classList.remove("active");
-  xImg.classList.add("active");
+winnerText.innerHTML="🤝 Match Draw";
+
+return;
+
+}
+
+if(currentPlayer==="X"){
+
+currentPlayer="O";
+
+xImg.classList.remove("active");
+
+oImg.classList.add("active");
+
+}
+
+else{
+
+currentPlayer="X";
+
+oImg.classList.remove("active");
+
+xImg.classList.add("active");
+
+}
+
+});
+
+});
+
+function checkWinner(){
+
+for(let pattern of winPatterns){
+
+let[a,b,c]=pattern;
+
+if(
+
+board[a]&&
+
+board[a]===board[b]&&
+
+board[a]===board[c]
+
+){
+
+return true;
+
+}
+
+}
+
+return false;
+
+}
+
+restartBtn.addEventListener("click",()=>{
+
+cells.forEach(cell=>{
+
+cell.innerHTML="";
+
+});
+
+board=["","","","","","","","",""];
+
+currentPlayer="X";
+
+winnerText.innerHTML="";
+
+oImg.classList.remove("active");
+
+xImg.classList.add("active");
+
 });
