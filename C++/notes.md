@@ -42,3 +42,73 @@ int main() {
 }
 ```
 
+
+## Common C++ Libraries:
+
+- `<iostream>`: For input and output operations.
+- `<vector>`: For using the vector container.
+- `<algorithm>`: For using standard algorithms like sort, search, etc.
+- `<string>`: For string manipulation and operations.
+
+## Arrays and Vectors:
+
+- Arrays: Fixed-size collections of elements of the same type. Example: `int arr[5];`
+- Vectors: Dynamic arrays that can grow or shrink in size. Example: `vector<int> vec;`
+
+Array code example:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[5] = {1, 2, 3, 4, 5};
+    for(int i = 0; i < 5; i++) {
+        cout << arr[i] << " ";
+    }
+    return 0;
+}
+```
+
+Vector code example:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> vec = {1, 2, 3, 4, 5};
+    for(int i = 0; i < vec.size(); i++) {
+        cout << vec[i] << " ";
+    }
+    return 0;
+}
+```
+
+## STL (Standard Template Library):
+
+- The STL provides a collection of template classes and functions for common data structures (like vectors, lists, queues, stacks) and algorithms (like sorting, searching).
+
+Usage example of STL vector:
+
+```cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main() {
+    vector<int> vec = {5, 3, 8, 1, 2};
+    
+    // Sorting the vector
+    sort(vec.begin(), vec.end());
+    
+    // Displaying the sorted vector
+    for(int i = 0; i < vec.size(); i++) {
+        cout << vec[i] << " ";
+    }
+    return 0;
+}
+```
