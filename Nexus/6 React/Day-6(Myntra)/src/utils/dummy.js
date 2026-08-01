@@ -1,3 +1,3 @@
-const arr = [{cloth:"T-Shirt",offer:"20-80%off"},{cloth:"Jeans",offer:"30-80%off"},{cloth:"Pant",offer:"50-60%off"},{cloth:"Kurta",offer:"40-50%off"},{cloth:"Pajama",offer:"20-80%off"},{cloth:"Blazer",offer:"10-80%off"},{cloth:"Blazer",offer:"10-80%off"},{cloth:"T-Shirt",offer:"70-80%off"},{cloth:"T-Shirt",offer:"40-70%off"},{cloth:"Bag",offer:"30-60%off"}]
+const arr = [{cloth:"T-Shirt",offer:"20-80%off",price:"699"},{cloth:"Jeans",offer:"30-80%off",price:"1299"},{cloth:"Pant",offer:"50-60%off",price:"899"},{cloth:"Kurta",offer:"40-50%off",price:"1599"},{cloth:"Pajama",offer:"20-80%off",price:"799"},{cloth:"Blazer",offer:"10-80%off",price:"2499"},{cloth:"Blazer",offer:"10-80%off",price:"2499"},{cloth:"T-Shirt",offer:"70-80%off",price:"499"},{cloth:"T-Shirt",offer:"40-70%off",price:"599"},{cloth:"Bag",offer:"30-60%off",price:"399"}]
 
 export default arr;

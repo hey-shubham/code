@@ -58,3 +58,15 @@ body{
 .Footerimg{
     width: 1200px;
 }
+
+.sortbtn{
+    font-size: large;
+    height: 30px;
+    width: 200px;
+    background-color: red;
+    color: white;
+}
+
+.sortbtn:hover{
+    background-color: chocolate;
+}

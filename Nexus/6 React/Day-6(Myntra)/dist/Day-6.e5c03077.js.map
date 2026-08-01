@@ -1,1 +1,0 @@
-{"mappings":"AAAA;AAEA,MAAM,UAAU,SAAS,cAAc,CAAC;AACxC,QAAQ,SAAS,CAAC;AAElB,QAAQ,GAAG,CAAC","sources":["myntra.js"],"sourcesContent":["imp\r\n\r\nconst element = document.getElementById('root');\r\nelement.innerHTML(\"shubham\");\r\n\r\nconsole.log(element);"],"names":[],"version":3,"file":"Day-6.e5c03077.js.map","sourceRoot":"/__parcel_source_root/"}
