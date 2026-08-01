@@ -1,0 +1,61 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Heading {
+  justify-content: space-between;
+  display: flex;
+}
+
+.images {
+  position: relative;
+  left: 20px;
+}
+
+.option {
+  padding: 20px;
+}
+
+.search {
+  width: 400px;
+  height: 10px;
+  padding: 10px;
+  position: relative;
+  top: 15px;
+}
+
+.Profile {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+.button, .pro {
+  background-color: #fff;
+  border: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.middle {
+  background-color: #efeeee;
+  justify-content: center;
+  padding: 30px;
+}
+
+.card {
+  color: #fff;
+  background-color: #067406;
+}
+
+.Footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Footerimg {
+  width: 1200px;
+}
+/*# sourceMappingURL=Day-6(Myntra).3a01df49.css.map */
