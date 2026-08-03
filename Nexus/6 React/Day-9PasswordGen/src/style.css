@@ -1,0 +1,25 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+
+#root{
+    width: 500px;
+    padding: 10px 10px 20px 10px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #0f32ca 0%, #ae75e8 100%);
+    text-align: center;
+}
+
+.second label{
+    margin-right: 10px;
+    font-size: large;
+}
